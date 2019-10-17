@@ -16,7 +16,7 @@ public class Aviao extends Personagem implements ArmamentoVip {
     }
 
     public Aviao(int id, int pontuacao, boolean abatido, int size, boolean abater) {
-        super(id, pontuacao, abatido, size);
+        super(id, pontuacao, abatido);
         this.abater = abater;
     }
 
