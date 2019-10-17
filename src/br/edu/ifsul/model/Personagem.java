@@ -1,23 +1,22 @@
 package br.edu.ifsul.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Personagem {
     protected int id;
     protected int pontuacao;
     protected boolean abatido;
-    private int size;
     private int quantidade;
 
     public Personagem(){
 
     }
 
-    public Personagem(int id, int pontuacao, boolean abatido, int size) {
+    public Personagem(int id, int pontuacao, boolean abatido) {
         this.id = id;
         this.pontuacao = pontuacao;
         this.abatido = abatido;
-        this.size = size;
     }
 
     public Personagem(int pontuacao, boolean abatido){
@@ -49,9 +48,13 @@ public abstract class Personagem {
     }
 
     public List<Personagem> gerar(int quantidade, int size){
-            this.size += size;
-            this.quantidade = quantidade;
-            return null;
+        List<Personagem> personagens = new ArrayList<>();
+        int acum = size;
+        for (int i = 0; i < quantidade ; i++) {
+            personagens.add();
+        }
+
+            return personagens;
     }
 
     public abstract void abater(boolean abater);
