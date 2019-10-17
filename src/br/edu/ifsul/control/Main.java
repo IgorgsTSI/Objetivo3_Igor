@@ -34,6 +34,9 @@ public class Main {
         personagens.add(aviao2);
         personagens.add(aviao3);
         System.out.println(personagens);
+
+        List<Tanque> novotanque = new ArrayList<>();
+        novotanque.gerar()
     }
 
 }

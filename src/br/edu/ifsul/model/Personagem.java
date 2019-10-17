@@ -47,15 +47,7 @@ public abstract class Personagem {
         this.abatido = abatido;
     }
 
-    public List<Personagem> gerar(int quantidade, int size){
-        List<Personagem> personagens = new ArrayList<>();
-        int acum = size;
-        for (int i = 0; i < quantidade ; i++) {
-            personagens.add();
-        }
-
-            return personagens;
-    }
+    public abstract List<Personagem> gerar(int quantidade, int size);
 
     public abstract void abater(boolean abater);
 
